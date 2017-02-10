@@ -64,3 +64,13 @@ Here **$individualCache** means you are trying to cache each and every row separ
     protected $cacheAll = true;
 
 **$cacheName** represents the name of the caching. For individual caching it will be like users.{id} ie, users.1. For whole caching it will be simply users.
+
+Now you can access the cache using Facade or helper function like
+
+    cache('users')   // for all cache
+    cache('users.1') // for individual cache
+
+or
+
+    Cache::get('users')   // for all cache
+    Cache::get('users.1') // for individual cache
