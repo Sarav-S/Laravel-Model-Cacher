@@ -1,5 +1,5 @@
 # Laravel Model Cacher
-
+[![Latest Stable Version](https://poser.pugx.org/sarav/model-cacher/v/stable)](https://packagist.org/packages/sarav/model-cacher)[![Total Downloads](https://poser.pugx.org/sarav/model-cacher/downloads)](https://packagist.org/packages/sarav/model-cacher)[![Latest Unstable Version](https://poser.pugx.org/sarav/model-cacher/v/unstable)](https://packagist.org/packages/sarav/model-cacher)[![License](https://poser.pugx.org/sarav/model-cacher/license)](https://packagist.org/packages/sarav/model-cacher)
 ### A simple laravel package to cache database values and manage them efficiently through model events
 
 - **Laravel**: 5.4.*
