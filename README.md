@@ -30,11 +30,11 @@ After adding the service provider, publish the configuration file.
 
     php artisan vendor:publish --tag=public --force
 
-> If nothing gets published, try clearing the cache php artisan config:cache
+> If nothing gets published, try clearing the cache by running *php artisan config:cache*
 
 ##Step 4 : Configuring the cacheable.php ##
 
-When you publish, you will see cacheable.php under config folder. Open up the file and you see
+When you publish, you will see cacheable.php under *config* folder. Open up the file and you see
 array containing the models and timing for cache to remember. Add the list of models with namespace
 for which you wanted to add caching.
 
@@ -59,8 +59,8 @@ Add the CacheHandler trait for the model you wanted to manage the caching
 	    protected $cacheName = "users";
 	}
 
-Here $individualCache means you are trying to cache each and every row separately. If you want to cache it on the whole, you could remove that and add 
+Here **$individualCache** means you are trying to cache each and every row separately. If you want to cache it on the whole, you could remove that and add 
 
     protected $cacheAll = true;
 
-$cacheName represents the name of the caching. For individual caching it will be like users.{id} ie, users.1. For whole caching it will be simply users.
+**$cacheName** represents the name of the caching. For individual caching it will be like users.{id} ie, users.1. For whole caching it will be simply users.
