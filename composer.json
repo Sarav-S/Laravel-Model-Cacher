@@ -1,0 +1,21 @@
+{
+    "name": "sarav/model-cacher",
+    "description": "A simple laravel package to cache database values and manage them efficiently",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sarav\\":  "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.4.*",
+    },
+    "authors": [
+        {
+            "name": "Saravanan Sampath kumar",
+            "email": "me@sarav.co"
+        }
+    ],
+    "minimum-stability": "dev"
+}
