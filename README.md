@@ -38,6 +38,8 @@ When you publish, you will see cacheable.php under *config* folder. Open up the 
 array containing the models and timing for cache to remember. Add the list of models with namespace
 for which you wanted to add caching.
 
+After adding necessary models do *php artisan config:cache* to clear cache.
+
 ##Step 5 : Configuring the model ##
 
 Add the CacheHandler trait for the model you wanted to manage the caching

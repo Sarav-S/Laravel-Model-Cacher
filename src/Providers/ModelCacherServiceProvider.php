@@ -21,6 +21,10 @@ class ModelCacherServiceProvider extends ServiceProvider
                 $model::observe(EventObserver::class);
             }
         }
+
+         $this->publishes([
+            __DIR__.'/../config/cacheable.php' => config_path('cacheable.php')
+        ], 'config');
     }
 
     /**
