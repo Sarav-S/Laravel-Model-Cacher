@@ -24,7 +24,7 @@ class ModelCacherServiceProvider extends ServiceProvider
 
          $this->publishes([
             __DIR__.'/../config/cacheable.php' => config_path('cacheable.php')
-        ], 'config');
+        ], 'laravel-model-cacher');
     }
 
     /**

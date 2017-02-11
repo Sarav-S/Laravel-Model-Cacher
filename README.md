@@ -22,13 +22,13 @@ or
 
 Once you have installed the package, add the service provider to app.php file
 
-    Sarav\Providers\ModelCacherServiceProvider::Class
+    Sarav\Providers\ModelCacherServiceProvider::class
 
 ##Step 3 : Publish the config file ##
 
 After adding the service provider, publish the configuration file.
 
-    php artisan vendor:publish --tag=public --force
+    php artisan vendor:publish --tag=laravel-model-cacher --force
 
 > If nothing gets published, try clearing the cache by running *php artisan config:cache*
 
